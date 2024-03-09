@@ -13,6 +13,22 @@ yargs.command({
   }
 });
 
+//////
+args.command({
+    command: "delete",
+    describe: "Delete numbers 2, 4, 6, and 8 from the list",
+    handler: () => {
+      list = list.filter(num => ![2, 4, 6, 8].includes(num));
+      console.log("Deleting [2, 4, 6, 8] , the list : ",list);
+    }
+  });
 
 //////
+yargs.command({
+    command: "read",
+    describe: "Reading the list",
+    handler: () => {
+      console.log("The list : ",list);
+    }
+  });
 yargs.parse();
