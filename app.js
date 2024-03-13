@@ -14,7 +14,7 @@ yargs.command({
 });
 
 //////
-args.command({
+yargs.command({
     command: "delete",
     describe: "Delete numbers 2, 4, 6, and 8 from the list",
     handler: () => {
@@ -32,3 +32,6 @@ yargs.command({
     }
   });
 yargs.parse();
+
+
+//fatma
